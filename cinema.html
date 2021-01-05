@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>라떼 시네마</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script>
+        function play(mov) {
+            document.getElementById("ifr").src = "https://www.youtube.com/embed/" + mov + "?autoplay=1&loop=1&playlist=" + mov;
+        }
+    </script>
+    <style>
+    </style>
+</head>
+
+<body>
+    <!--top영역-->
+    <div id="top">
+        <header class="ibx clb top">
+            <h1 class="dn">top영역</h1>
+            <div class="col-12 t1"></div>
+            <div class="col-12 t2 gnbbx">
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <h2>예매</h2>
+                            </a>
+                            <!--서브메뉴-->
+                            <div class="sbox">
+                                <ol class="smenu1">
+                                    <li>
+                                        <a href="">예매하기</a>
+                                    </li>
+                                    <li>
+                                        <a href="">상영시간표</a>
+                                    </li>
+                                    <li>
+                                        <a href="">할인안내</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h2>영화</h2>
+                            </a>
+                            <!--서브메뉴-->
+                            <div class="sbox">
+                                <ol class="smenu1">
+                                    <li>
+                                        <a href="">현재상영작</a>
+                                    </li>
+                                    <li>
+                                        <a href="">상영예정작</a>
+                                    </li>
+                                    <li>
+                                        <a href="">오페라</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h2>상영관</h2>
+                            </a>
+                            <!--서브메뉴-->
+                            <div class="sbox">
+                                <ol class="smenu1">
+                                    <li>
+                                        <a href="">스페셜관</a>
+                                    </li>
+                                    <li>
+                                        <a href="">서울</a>
+                                    </li>
+                                    <li>
+                                        <a href="">경기/인천</a>
+                                    </li>
+                                    <li>
+                                        <a href="">충청/대전</a>
+                                    </li>
+                                    <li>
+                                        <a href="">전라/광주</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h2>이벤트</h2>
+                            </a>
+                            <!--서브메뉴-->
+                            <div class="sbox">
+                                <ol class="smenu1">
+                                    <li>
+                                        <a href="">영화</a>
+                                    </li>
+                                    <li>
+                                        <a href="">시사회/무대인사</a>
+                                    </li>
+                                    <li>
+                                        <a href="">HOT</a>
+                                    </li>
+                                    <li>
+                                        <a href="">제휴할인</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h2>스토어</h2>
+                            </a>
+                            <!--서브메뉴-->
+                            <div class="sbox">
+                                <ol class="smenu1">
+                                    <li>
+                                        <a href="">베스트</a>
+                                    </li>
+                                    <li>
+                                        <a href="">관람권</a>
+                                    </li>
+                                    <li>
+                                        <a href="">스낵음료</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <!--컨텐츠영역-->
+    <div id="cont">
+        <main class="ibx clb cont">
+            <h1 class="dn">cont영역</h1>
+            <!--video-->
+            <div class="col-12 c1" id="screen">
+                <iframe id="ifr" src="https://www.youtube.com/embed/cH-cGbVdtfc?autoplay=1" allow="autoplay"></iframe>
+            </div>
+            <!--개봉영화목록-->
+            <div class="col-3 c2">
+            </div>
+            <div class="col-6 c2 mlist">
+                <ol>
+                    <li onclick="play('Gft-p7MkvOg')">
+                        <img src="images/movie1.jpg" alt="이웃사촌">
+                        <ol class="movtxt">
+                            <li>이웃사촌</li>
+                            <li>드라마</li>
+                            <li>11월 25일</li>
+                        </ol>
+                    </li>
+                    <li onclick="play('rzwf6ol0QIk')">
+                        <img src="images/movie2.jpg" alt="런">
+                        <ol class="movtxt">
+                            <li>런</li>
+                            <li>미스터리</li>
+                            <li>11월 20일</li>
+                        </ol>
+                    </li>
+                    <li onclick="play('H5SO2vFKON8')">
+                        <img src="images/movie3.jpg" alt="도굴">
+                        <ol class="movtxt">
+                            <li>도굴</li>
+                            <li>범죄</li>
+                            <li>11월 4일</li>
+                        </ol>
+                    </li>
+                    <li onclick="play('PgglNLVkytQ')">
+                        <img src="images/movie4.jpg" alt="프롬">
+                        <ol class="movtxt">
+                            <li>프롬</li>
+                            <li>코미디</li>
+                            <li>12월 2일</li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+            <div class="col-3 c2">
+            </div>
+            <!--커튼 core.css-->
+            <img class="curtain lc" src="images/curtain.png" alt="왼쪽커튼">
+            <img class="curtain rc" src="images/curtain.png" alt="오른쪽커튼">
+        </main>
+    </div>
+    <!--info영역-->
+    <div id="info">
+        <footer class="ibx clb info">
+            <h1 class="dn">info영역</h1>
+            <div class="col-3 i1 logo">
+                <img src="images/latte_W.png" alt="라떼로고">
+            </div>
+            <div class="col-7 i1">
+                <address>
+                    서울특별시 송파구 올림픽로 300 롯데월드타워 27층고객센터 1544-8855 <br>
+                    대표이사 기원규사업자등록번호 313-87-00979통신판매업신고번호 제1184호개인정보 보호책임자 이미선 <br>
+                    COPYRIGHT© LOTTE CINEMA ALL RIGHT RESERVED.
+                </address>
+            </div>
+            <div class="col-2 i1 snsbx">
+                <ul class="sns">
+                    <li>
+                        <a href="https://ko-kr.facebook.com/LotteCinema.kr/">
+                            <span class="bld">페이스북바로가기</span></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/lotte_cinema">
+                            <span class="bld">트위터바로가기</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/lottecinema_official/?hl=ko">
+                            <span class="bld">인스타그램바로가기</span></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!--그리드 영역-->
+    <ul class="grid">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body></html>

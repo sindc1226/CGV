@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+.grid{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    
+    width: 1200px;
+    height: 100%;
+    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    opacity: 1;
+    z-index: 99;
+}
+
+.grid li{
+    width: 8.33%;
+    height: 100%;
+    float: left;
+    padding: 0 15px;
+    background-color: pink;
+    /*outline: 1px solid blue;*/
+    background-clip: content-box;
+    box-sizing: border-box;
+}

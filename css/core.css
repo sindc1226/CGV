@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+.dn {
+    display: none;
+}
+
+h2 {
+    font-size: 16px;
+    color: #fff;
+}
+
+/*커튼*/
+.cont {
+    position: relative;
+    overflow: hidden;
+}
+
+.curtain {
+    position: absolute;
+    top: 0;
+    transform: scale(2, 2.8);
+
+}
+
+.lc {
+    left: 0;
+    transform-origin: left top;
+    animation: curtain_move_lc 10s ease-in-out forwards;
+}
+
+.rc {
+    right: 0;
+    transform-origin: right top;
+    animation: curtain_move_rc 10s ease-in-out forwards;
+
+}
+
+@keyframes curtain_move_lc {
+    to {
+        left: -31%;
+    }
+}
+
+@keyframes curtain_move_rc {
+    to {
+        right: -31%;
+    }
+}
